@@ -23,10 +23,10 @@ const SingleRepo = () => {
   return (
     <div className="container mx-auto mt-4">
       {repoDetails ? (
-        <div>
-          <h2 className="text-xl font-semibold mb-4">{repoDetails.name}</h2>
-          <p>Description: {repoDetails.language}</p>
-          <p>Stars: {repoDetails.size}</p>
+        <div className="flex flex-col justify-center items-center  px-8 py-8 text-white bg-black text-center">
+          <h2 className="uppercase ">{repoDetails.name}</h2>
+          <p>Language: {repoDetails.language}</p>
+          <p>Size: {repoDetails.size}</p>
           {/* Display more details as needed */}
         </div>
       ) : (
