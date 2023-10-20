@@ -22,11 +22,11 @@ const RepoList = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-4">
-      <h2 className="text-xl font-semibold mb-4">My Repositories</h2>
-      <ul>
+    <div className="flex flex-col justify-center items-center text-black bg-white">
+      <h1 className="mb-5 mt-8 text-2xl uppercase font-bold underline">My Repositories</h1>
+      <ul className="bg-gray-900 px-6 py-4 mb-8 mt-5 mx-auto">
         {repos.map((repo) => (
-          <li key={repo.id} className="py-2">
+          <li key={repo.id} className="bg-white text-center text-black px-6 py-4 my-3 rounded-[1.5rem] text-2xl font-bold uppercase">
             <Link to={`/repo/${repo.name}`}>
               {repo.name}
             </Link>
